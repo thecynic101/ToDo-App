@@ -102,6 +102,11 @@ function App(props) {
       </ul>
     </div>
   );
+  
+  function addTask(name) {
+    alert(name);
+  }
+  
 }
 
 export default App;
