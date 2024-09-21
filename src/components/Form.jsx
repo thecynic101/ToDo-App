@@ -1,4 +1,4 @@
-
+/* eslint-disable react/prop-types */
 
 
 import { useState } from "react";
@@ -13,7 +13,7 @@ function Form(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        props.addTask("name");
+        props.addTask(name);
         setName('');
       }
 
