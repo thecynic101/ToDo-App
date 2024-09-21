@@ -28,10 +28,9 @@ function App(props) {
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map((task) => {
-      // if this task has the same ID as the edited task
+
       if (id === task.id) {
-        // use object spread to make a new obkect
-        // whose `completed` prop has been inverted
+      
         return { ...task, completed: !task.completed };
       }
       return task;
@@ -46,12 +45,12 @@ function App(props) {
 
   function editTask(id, newName) {
     const editedTaskList = tasks.map((task) => {
-      // if this task has the same ID as the edited task
+      
       if (id === task.id) {
-        // Copy the task and update its name
+        
         return { ...task, name: newName };
       }
-      // Return the original task if it's not the edited task
+      
       return task;
     });
     setTasks(editedTaskList);
